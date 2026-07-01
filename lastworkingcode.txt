@@ -1,0 +1,45 @@
+// const SELECTORS = {
+//   videoCard: 'ytd-rich-item-renderer',           // homepage
+//   watchSidebar: 'ytd-watch-next-secondary-results-renderer',  // watch page sidebar (whole thing)
+//   comments: 'ytd-comments',
+// };
+
+// function hideElement(el) {
+//   el.style.display = 'none';
+// }
+
+// function showElement(el) {
+//   el.style.display = '';
+// }
+
+// function applyFilters(settings) {
+//   if (settings.hideFeed) {
+//   document.querySelectorAll(SELECTORS.videoCard).forEach(hideElement);
+//   document.querySelectorAll(SELECTORS.watchSidebar).forEach(hideElement);
+//   document.querySelectorAll(SELECTORS.comments).forEach(hideElement);
+// }else {
+//     document.querySelectorAll(SELECTORS.videoCard).forEach(showElement);
+//     document.querySelectorAll(SELECTORS.watchSidebar).forEach(showElement);
+//     document.querySelectorAll(SELECTORS.comments).forEach(showElement);
+//   }
+// }
+
+// // MutationObserver to catch dynamically loaded content
+// const observer = new MutationObserver(() => {
+//   chrome.storage.sync.get(['hideFeed'], applyFilters);
+// });
+
+// observer.observe(document.body, {
+//   childList: true,
+//   subtree: true,
+// });
+
+// // React instantly when popup toggles a setting
+// chrome.storage.onChanged.addListener((changes, area) => {
+//   if (area === 'sync') {
+//     chrome.storage.sync.get(['hideFeed'], applyFilters);
+//   }
+// });
+
+// // Run on initial load
+// chrome.storage.sync.get(['hideFeed'], applyFilters);
