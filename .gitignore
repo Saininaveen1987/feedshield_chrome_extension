@@ -1,0 +1,4 @@
+# Ignore an entire folder and everything inside it
+trash/
+# Ignore a specific file
+lastworkingcode.txt

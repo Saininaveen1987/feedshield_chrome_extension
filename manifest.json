@@ -5,8 +5,7 @@
   "description": "Take back control of your YouTube and Instagram feeds.",
   "permissions": ["storage"],
   "host_permissions": [
-    "https://www.youtube.com/*",
-    "https://www.instagram.com/*"
+    "https://www.youtube.com/*"
   ],
   "content_scripts": [
     {
